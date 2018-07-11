@@ -149,7 +149,7 @@ describe "#display_board in 'lib/display_board.rb" do
       X", "X", "X", "X", "X", "X"] # This is not correct
 
       # Don't touch the following lines.
-      output = capture_puts{ display_board(board) } if defined?(display_board)
+      output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
       # Each line that starts with expect represents a row in the ouput.
